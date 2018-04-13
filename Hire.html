@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HireMe</title>
+<link href="CSS/All.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="Header">
+  <header> 
+    <!--**************************************************************************
+    Header starts here. It contains Logo and 6 navigation links. 
+    ****************************************************************************-->
+    <div id="logo"> <a href="index.html"><img src="image/Logo.jpg" alt="NewZFS" class="NewZFS"></a></div>
+    <nav> <a href="index.html" title="Link">Home</a> <a href="index.html#AboutMe" title="Link">About Me</a><a href="index.html#ContactMe" title="Link">Contact Me</a> <a href="Portfolio.html" title="Link">Portfolio</a> <a href="Gallery.html" title="Link">Gallery</a><a href="Hire.html" title="Link">Hire Me</a></nav>
+  </header>
+<div class="AboutMe">HIRE ME</div><br><br>
+	</div>
+	
+	<form id="theform" method="post" action="http://qna.nyp.edu.sg/EG1744/Form/processForm.php" onsubmit="popup()" target="_blank" >
+
+  <label for="username">Your Name : </label>
+  <input type="text" id="Name" name="yourname" placeholder="Type in your Name.. " autocomplete="off" required />
+
+  <label for="text">Your Email</label>
+  <input type="email" id="Email" name="Email" placeholder="Enter your Email.." autocomplete="off" required />	
+		
+  <label for="text">Contact Number : </label>
+  <input type="tel" id="Phone" name="ContactNumber" placeholder="Enter your Contact Number.." autocomplete="off" required />
+  <label for="text">Describe your problem : </label>
+	<textarea name="feedback" rows="7" cols="115" placeholder="Enter your Text.." required ></textarea>
+
+  <input type="submit" value="Submit" />
+
+</form>
+	
+	<br><br><br><br><br>
+<footer>
+  <p>Copyright 2018 &copy; New ZFS. Chua Wen Feng 175212Q</p>
+</footer>
+
+	<script>
+	function popup(){
+		var x1=document.getElementById('Name').value;
+		alert( x1 + " , Thank you for your message. It has been sent. ")
+	}
+	</script>
+</body>
+</html>

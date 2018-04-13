@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+<link href="CSS/All.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="Header">
+  <header> 
+    <!--**************************************************************************
+    Header starts here. It contains Logo and 6 navigation links. 
+    ****************************************************************************-->
+    <div id="logo"> <a href="index.html"><img src="image/Logo.jpg" alt="NewZFS" class="NewZFS"></a></div>
+    <nav> <a href="index.html" title="Link">Home</a> <a href="index.html#AboutMe" title="Link">About Me</a><a href="index.html#ContactMe" title="Link">Contact Me</a> <a href="Portfolio.html" title="Link">Portfolio</a> <a href="Gallery.html" title="Link">Gallery</a><a href="Hire.html" title="Link">Hire Me</a></nav>
+  </header>
+<div class="AboutMe">GALLERY</div>
+		<br><br>
+	</div>
+	<div id="bannerImage">
+      <img class="mySlides" src="image/Building.jpg" alt="Building">
+      <img class="mySlides" src="image/Ethereum.jpg" alt="ethereum">
+		<img class="mySlides" src="image/GTX1070NiceHash.jpg" alt="GTX1070NiceHash">
+		<img class="mySlides" src="image/ReadyToMine.jpg" alt="ReadyToMine">
+		<img class="mySlides" src="image/NiceHash.jpg" alt="NiceHash">
+      </div>
+	
+	<br><br><br><br><br>
+<footer>
+  <p>Copyright 2018 &copy; New ZFS. Chua Wen Feng 175212Q</p>
+</footer>
+	
+<script>
+var myIndex = 0;
+slide();
+
+function slide() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(slide, 2500); // Change image every 2.5 seconds
+}
+</script>
+</body>
+</html>
